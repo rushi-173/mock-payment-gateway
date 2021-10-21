@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Payment, OrderSuccess, UserForm } from "./pages";
+import { UPI, COD, UserForm, Home } from "./pages";
 function App() {
 	return (
 		<div className="App">
 			<div className="main">
 				<Routes>
-					<Route path="/" element={<Payment />} />
-					<Route path="/success" element={<OrderSuccess />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/upi" element={<UPI />} />
+					<Route path="/success" element={<COD />} />
 					<Route path="/details" element={<UserForm />} />
 				</Routes>
 			</div>

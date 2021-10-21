@@ -1,3 +1,4 @@
-export { Payment } from "./Payment/Payment";
+export { UPI } from "./UPI/UPI";
 export { UserForm } from "./UserForm/UserForm";
-export { OrderSuccess } from "./OrderSuccess/OrderSuccess";
+export { COD } from "./COD/COD";
+export { Home } from "./Home/Home";

@@ -1,9 +1,9 @@
-import "./OrderSuccess.css";
+import "./COD.css";
 import gokwik from "./../../assets/gokwik-o.png";
 
-export function OrderSuccess() {
+export function COD() {
 	return (
-		<div className="OrderSuccess">
+		<div className="COD">
 			<div className="brand-container">
 				<img src={gokwik} alt="gk-icon" className="gk-o-icon" />
 			</div>

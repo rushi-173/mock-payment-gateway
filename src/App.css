@@ -22,3 +22,10 @@ i {
 	pointer-events: none;
 	vertical-align: center; /* to align the icon with the text */
 }
+
+@media screen and (max-width: 500px) {
+	.main {
+		margin: 0;
+		padding: 0.5rem 0rem;
+	}
+}
