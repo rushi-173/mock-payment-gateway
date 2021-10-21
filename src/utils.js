@@ -10,3 +10,12 @@ export function getDeviceType() {
 		return "other";
 	}
 }
+
+export function validateMobile(num) {
+	var phoneno = /^\d{10}$/;
+	if (num.match(phoneno)) {
+		return true;
+	} else {
+		return false;
+	}
+}

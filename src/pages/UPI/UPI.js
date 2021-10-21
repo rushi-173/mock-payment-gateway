@@ -8,7 +8,7 @@ import gokwikIcon from "./../../assets/gokwik-icon-dark.png";
 import gokwik from "./../../assets/gokwik.png";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
-import { getDeviceType } from "../../utils";
+import { getDeviceType, validateMobile } from "../../utils";
 import Loader from "react-loader-spinner";
 import { useState } from "react";
 import { orderData, userData } from "../../config";
@@ -44,6 +44,10 @@ export function UPI() {
 		}
 	}
 	async function getPaymentLink() {
+		if (!validateMobile(phoneNumber)) {
+			alert("enter valid phone number.");
+			return;
+		}
 		try {
 			setIsLoading(true);
 			const res = await axios.post(
